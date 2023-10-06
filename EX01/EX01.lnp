@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"ex01\startup_stm32f407xx.o"
+"ex01\main.o"
+"ex01\gpio.o"
+"ex01\stm32f4xx_it.o"
+"ex01\stm32f4xx_hal_msp.o"
+"ex01\stm32f4xx_hal_tim.o"
+"ex01\stm32f4xx_hal_tim_ex.o"
+"ex01\stm32f4xx_hal_rcc.o"
+"ex01\stm32f4xx_hal_rcc_ex.o"
+"ex01\stm32f4xx_hal_flash.o"
+"ex01\stm32f4xx_hal_flash_ex.o"
+"ex01\stm32f4xx_hal_flash_ramfunc.o"
+"ex01\stm32f4xx_hal_gpio.o"
+"ex01\stm32f4xx_hal_dma_ex.o"
+"ex01\stm32f4xx_hal_dma.o"
+"ex01\stm32f4xx_hal_pwr.o"
+"ex01\stm32f4xx_hal_pwr_ex.o"
+"ex01\stm32f4xx_hal_cortex.o"
+"ex01\stm32f4xx_hal.o"
+"ex01\stm32f4xx_hal_exti.o"
+"ex01\system_stm32f4xx.o"
+--strict --scatter "EX01\EX01.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "EX01.map" -o EX01\EX01.axf
